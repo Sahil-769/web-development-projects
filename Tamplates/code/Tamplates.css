@@ -1,0 +1,87 @@
+
+body {
+    background-color: rgb(173, 171, 171);
+    display: flex;
+    justify-content:center;
+    margin-top:55px;
+    
+    
+}
+
+div {
+    border: 7px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    height: vmin;
+    width: 305px;
+    background-color: white;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 4px;
+    margin-left: 6px;
+    margin-block-start: -23px;
+    position: relative;
+    left: -40px;
+    top: -3px;
+    border-radius: 15px;
+    font-weight: 200;
+    font-size: 13px;
+    border: 2px solid rgba(204, 198, 198, 0.716);
+    font-family: sans-serif;
+    color: rgba(86, 86, 86, 0.827);
+
+}
+
+img {
+    border: 2px solid white;
+    border-radius: 29px;
+    position: relative;
+    left: 1px;
+    top: -1px;
+
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    top: -2px;
+}
+
+p {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.814);
+    position: relative;
+    top: -5px;
+    font-size: 16.5px;
+}
+
+.ab {
+    display: inline-block;
+    border: 3px solid lightblue;
+    width: 105px;
+    text-align: center;
+    height: 23px;
+    padding: 5px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 100px;
+    background-color: lightblue;
+    color: rgba(0, 0, 255, 0.684);
+    position: relative;
+    left: 60px;
+    top: -6px;
+
+
+}
+@media only screen and (max-width:1370){
+
+}
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

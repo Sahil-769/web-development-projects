@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#20C20E;
+            color:rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        let t=setInterval(()=>{
+            let last=document.body.getElementsByTagName("div");
+            last=last[last.length-1];
+            if(last.innerHTML.endsWith("...")){
+                last.innerHTML=last.innerHTML.slice(0,last.innerHTML.length-3);
+            }
+            else{
+                last.innerHTML=last.innerHTML+".";
+            }
+        },700)
+        let text=["Initializing Hacking",
+        "Reading your file",
+        "Passward files Detected",
+        "Sending all passwards and personal files to server",
+        "Cleaning up"
+        ]
+        async function randoms(){
+            return new Promise((resolve,reject)=>{
+                timeout=1+6*Math.random();
+                setTimeout(()=>{
+                    resolve()
+                },timeout*1000);
+            })
+        }
+        async function main(){
+
+            const addItem=async(item)=>{
+                await randoms();
+                let div=document.createElement("div");
+                div.innerHTML=item;
+                document.body.append(div)
+            }
+            for(const item of text){
+                 await addItem(item);
+            }
+            await randoms()
+            clearInterval(t)
+        }
+        main();
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

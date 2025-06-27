@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit</title>
+    <link rel="icon" type="image/x-icon" href="tag1.png">
+    <style>
+        body {
+            margin: auto;
+        }
+        
+        .item {
+            background-color: #f9f9f9;
+            width: fit-content;
+            margin: 10px 10px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            font-family: Verdana;
+            place-items: center;
+        
+        }
+        
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        
+        nav ul li .i {
+            color: black
+        }
+        
+        .Language {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+        
+        .download {
+            padding: 8px 16px;
+            color: rgb(255, 255, 255);
+            font-family: 'Segoe UI';
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+            background-color: #5cb85c;
+            text-decoration: none;
+        }
+        
+        .download:hover {
+            color: white;
+            background-color: black;
+        }
+        
+        .containers {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        
+        .container2 {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            grid-template-columns: 270px 441px 270px;
+        
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 20px
+        }
+        
+        .code1 {
+            margin-top: -10px;
+            margin-bottom: -10px;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 200;
+        }
+        
+        .code2 {
+            margin-top: -1px;
+            padding: 10px 10px 5px;
+            font-size: 8px;
+            font-weight: 200;
+        }
+        
+        .code3 {
+            margin-top: -5px;
+            font-size: 8px;
+            font-weight: 200;
+        }
+        
+        footer {
+            margin-top: 50px;
+            background-color: #222;
+            width: 100vw;
+            height: 100vh;
+            margin-left: 0px
+        }
+        
+        ul {
+            padding-inline-start: 0px;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .container {
+            display: flex;
+            margin-top: -14px;
+            align-items: center;
+        }
+        
+        .items {
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
+            padding-left: 70px;
+        }
+        
+        .container ul:first-child {
+            margin-inline-end: 103px;
+            margin-inline-start: 103px;
+        }
+        
+        .i {
+            margin-inline-end: 20px;
+            font-family: 'Segoe UI';
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.777)
+        }
+        
+        .checkbtn {
+            font-size: 30px;
+            color: black;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+        
+        #check {
+            display: none;
+        }
+        
+        @media only screen and (max-width:1000px) {
+            .logo {
+                margin: auto;
+            }
+        
+            .image {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+        
+            .containers {
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .items {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+        
+            .logo {
+                margin: auto;
+            }
+        
+            .container2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width:621px) {
+            .container2{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li class="image1"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" width="210px" height="75px"></li>
+                </ul>
+                <div>
+                    <ul class="items">
+                        <li class="i">Products&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                height="16" color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="i">For&nbsp;business&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                width="16" height="16" color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="i">Resources&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                height="16" color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="i">Support&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                height="16" color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="i">Our&nbsp;company&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                height="16" color="#000000" fill="none">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></li>
+                        <li class="i"><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"></li>
+                        <li class="i" class="a6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                height="16" color="#000000" fill="none">
+                                <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container2">
+            <div class="item a">
+                <h1>English</h1>
+                <p></p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">55AFE9258051C98CF1A0878015769B5D766A870A2AD125E35EAD7</p>
+                <p class="code3">5C3B0BA8612</p>
+            </div>
+            <div class="item b">
+                <h1>Deutsch</h1>
+                <p class="Language">German</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">4575D10E46FC662B16981232E691F26B1F1B4B641FE93285A8528D7</p>
+                <p class="code3">D9A6766FF</p>
+            </div>
+            <div class="item c">
+                <h1>Italiano</h1>
+                <p class="Language">Italian</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">3834804571F172E621CE24A6039F6ACCFE9B90D0DE9E78385B200D</p>
+                <p class="code3">EA5CC64326</p>
+            </div>
+            <div class="item d">
+                <h1>Español</h1>
+                <p class="Language">Spanish</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">06F57A02F88D38ED6EC230CB5ACC56BE2DE0A02D8CA9272EDDD1</p>
+                <p class="code3">50745BA39535</p>
+            </div>
+            <div class="item e">
+                <h1>français</h1>
+                <p class="Language">French</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">5A9CD26E19EEEDBCCF58F89FD2DB58279E495E790386570A03ED6</p>
+                <p class="code3">AFDE35EB885</p>
+            </div>
+            <div class="item f">
+                <h1>Português brasileiro</h1>
+                <p class="Language">Brazilian Portuguese</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">50D1DF777A8B2EBD23AF1A6E2165F7939F16ACE849DA466E2CB7C</p>
+                <p class="code3">8FACE568236</p>
+            </div>
+            <div class="item g">
+                <h1>日本</h1>
+                <p class="Language">Japanese</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">C9B6A9BCF67E6BF450713EC0FF7E3741DEE9A6A372D1021CE9BED0</p>
+                <p class="code3">40308E107B</p>
+            </div>
+            <div class="item h">
+                <h1>한국어</h1>
+                <p class="Language">Korean</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">0D717F96F9B00B2DBD140FADE52EA93F919DCDC3AB7FB38759097</p>
+                <p class="code3">33F3A01F522</p>
+            </div>
+            <div class="item j">
+                <h1>中国</h1>
+                <p class="Language">Chinese</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">036736C19E76367BC0191FEC824736B25F56889AFCDB43FE7A64F5</p>
+                <p class="code3">39A23E858E</p>
+            </div>
+            <div class="item k">
+                <h1>中國</h1>
+                <p class="Language">Traditional Chinese</p>
+                <a class="download" href="ue_english_64.exe">Download 64-bit</a>
+                <p class="code1">SHA256</p>
+                <p class="code2">26B8A888328BCE634DBE1ABA2780600E9AD99395D1781CCA49233</p>
+                <p class="code3">AE28BDF1ECE</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

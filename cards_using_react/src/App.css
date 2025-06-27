@@ -1,0 +1,28 @@
+.container{
+    /* padding: 10px 0px 0px 0px; */
+    border: 2px solid black;
+    width:300px;
+    margin:10px;
+    background-color:beige;
+    transform: scale(0.85);
+    transition-duration: 0.5s;
+
+}
+.container:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.card{
+    margin:10px;
+    text-align: center;
+    font-weight: bolder;
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
